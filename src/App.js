@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense, lazy } from 'react';
+import "./App.css"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Index from './Contenido/Index.js'
+import Login from './Contenido/Login.js'
+import Abmtrabajos from './Contenido/ABMtrabajos/Abmtrabajos'
+import Menu from './Contenido/Menu.js';
+import { LoginProvider } from './Contenido/Context/LoginContext';
+
+const Abmcategorias = lazy(() => import ( './Contenido/ABMcategorias/Abmcategorias'))
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <BrowserRouter>      
+    <LoginProvider>
+    <Menu />
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/admin/trabajos" element={<Abmtrabajos />} />
+        <Route path="/admin/categorias" element={<Abmcategorias/>} />
+      </Routes>  
+      </LoginProvider>
+    </BrowserRouter>
+    </>
+  )
 }
 
-export default App;
+export default App
