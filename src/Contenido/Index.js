@@ -166,9 +166,9 @@ function Index() {
                 <div className="row ">
                   <div className="col-md">
                     <div className="info-box">
-                      <i className="bi bi-geo-alt"></i>
-                      <p>527 e/ 9 y 10<br />Tolosa, La Plata</p>
-                      
+                    <p className='center'><i className="bi bi-geo-alt"></i>
+                      527 e/ 9 y 10 / Tolosa, La Plata</p><br></br>
+                      <iframe className='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1651.9803528514037!2d-57.977958842311644!3d-34.89877304983627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e637dad47c87%3A0xcaf6d3e6d0b324f7!2sAluminio%20Italia!5e0!3m2!1ses!2sar!4v1676585107419!5m2!1ses!2sar"></iframe>
                     </div>
                   </div>
                 </div>
@@ -216,3 +216,6 @@ function Index() {
 }
 
 export default Index;
+
+
+
