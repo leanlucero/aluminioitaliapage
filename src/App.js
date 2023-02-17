@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import "./App.css"
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { Switch, Routes, Route } from "react-router-dom"
 import Index from './Contenido/Index.js'
 import Login from './Contenido/Login.js'
 import Abmtrabajos from './Contenido/ABMtrabajos/Abmtrabajos'
@@ -12,17 +12,15 @@ const Abmcategorias = lazy(() => import ( './Contenido/ABMcategorias/Abmcategori
 function App() {
   return (
     <>
-    <BrowserRouter>      
+    <Switch>      
     <LoginProvider>
-    <Menu />
-      <Routes>
+        <Menu />
         <Route exact path="/" component={Index } />
-        <Route path="login" element={<Login />} />
-        <Route path="/admin/trabajos" element={<Abmtrabajos />} />
-        <Route path="/admin/categorias" element={<Abmcategorias/>} />
-      </Routes>  
+        <Route exact path="/login" component={<Login />} />
+        <Route exact path="/admin/trabajos" element={<Abmtrabajos />} />
+        <Route exact path="/admin/categorias" element={<Abmcategorias/>} />
       </LoginProvider>
-    </BrowserRouter>
+    </Switch>
     </>
   )
 }
