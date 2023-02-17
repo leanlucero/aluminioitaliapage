@@ -23,12 +23,12 @@ export default function Menu() {
                 style={{ maxHeight: '100px' }}
                 navbarScroll>
                 {!user ? <>
-                  <Nav.Link href="/#hero">Home</Nav.Link>
+                  <Nav.Link href="#hero">Home</Nav.Link>
                   {/* <Nav.Link href="/#about">About</Nav.Link> */}
-                  <Nav.Link href="/#values">Services</Nav.Link>
-                  <Nav.Link href="/#portfolio">Portfolio</Nav.Link>
+                  <Nav.Link href="#values">Services</Nav.Link>
+                  <Nav.Link href="#portfolio">Portfolio</Nav.Link>
                   {/* <Nav.Link href="/#recent-blog-posts">Blog</Nav.Link> */}
-                  <Nav.Link href="/#contact">Contacto</Nav.Link>
+                  <Nav.Link href="#contact">Contacto</Nav.Link>
                   <Nav.Link href="/login">Login</Nav.Link>
                 </>
                   : <>
