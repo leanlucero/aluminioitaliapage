@@ -16,8 +16,8 @@ function App() {
     <LoginProvider>
     <Menu />
       <Routes>
-        <Route path="/" element={<Index />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="" element={<Index />} />
+        <Route path="login" element={<Login />} />
         <Route path="/admin/trabajos" element={<Abmtrabajos />} />
         <Route path="/admin/categorias" element={<Abmcategorias/>} />
       </Routes>  

@@ -13,7 +13,7 @@ export default function Menu() {
       <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
         <Navbar variant="dark" expand="sm">
         <Navbar.Brand ><a href="/" className="logo d-flex align-items-center">
-              <img src="../img/logo.jpg" alt="" />
+              <img src="img/logo.jpg" alt="" />
               <span>Aluminio Italia</span>
             </a></Navbar.Brand>
           <Container fluid>
