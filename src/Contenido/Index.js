@@ -30,7 +30,7 @@ function Index() {
               <h2 data-aos="fade-up" data-aos-delay="400">Cerramientos y aberturas de aluminio</h2>
             </div>
             <div className="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
-              <img src="img/abert1.jpg" className="img-fluid" alt="" />
+              <img src="img/logo.jpg" className="img-fluid" alt="" />
             </div>
           </div>
         </div>
@@ -77,7 +77,7 @@ function Index() {
               <div className="row">
 
                 <div className="col-xl-4 text-center" data-aos="fade-right" data-aos-delay="100">
-                  <img src="img/features-3.png" className="img-fluid p-4" alt="" />
+                  <img src="img/abert1.jpg" className="img-fluid p-4" alt="" />
                 </div>
 
                 <div className="col-xl-8 d-flex content">

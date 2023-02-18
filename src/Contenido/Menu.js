@@ -12,11 +12,12 @@ export default function Menu() {
     <header id="header" className="header fixed-top">
       <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
         <Navbar variant="dark" expand="sm">
+        <Container fluid>
+
         <Navbar.Brand ><a href="./" className="logo d-flex align-items-center">
               <img src="img/logo.jpg" alt="" />
               <span>Aluminio Italia</span>
             </a></Navbar.Brand>
-          <Container fluid>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
               <Nav className="me-auto my-2 my-lg-0"
