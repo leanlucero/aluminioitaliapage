@@ -16,10 +16,11 @@ function App() {
       <LoginProvider>
       <Menu />
         <Routes>
-        <Route path="/aluminioitaliapage/" element={<Index /> } />
+        <Route exact path="/aluminioitaliapage/" element={<Index /> } />
         <Route exact path="/aluminioitaliapage/login" element={<Login />} />
         <Route exact path="/aluminioitaliapage/admin/trabajos" element={<Abmtrabajos />} />
         <Route exact path="/aluminioitaliapage/admin/categorias" element={<Abmcategorias/>} />
+        <Route path="*" element={<Index />} />
         </Routes>
       </LoginProvider>
     </BrowserRouter>

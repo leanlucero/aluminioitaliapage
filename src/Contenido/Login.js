@@ -14,7 +14,7 @@ export default function Login() {
 
   useEffect(()=>{
     if (user) {
-      history("/")
+      history("./")
     }
   },[])
   const cambiarNombre = (event) =>{
@@ -30,7 +30,7 @@ export default function Login() {
     if (token) {
       console.log(token)
       handleAuth(token)
-      history("/")
+      history("./")
     }
   }
 
@@ -64,7 +64,7 @@ export default function Login() {
             <button type="button" className="btn btn-primary" onClick={()=>login()}>
               Submit
             </button>
-            <a href="/" className="btn btn-danger">
+            <a href="./" className="btn btn-danger">
               Cancel
             </a>
           </div>
