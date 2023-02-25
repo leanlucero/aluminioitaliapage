@@ -15,9 +15,9 @@ function App() {
         <LoginProvider>
           <Menu />
           <Routes  >
-            <Route exact path="/aluminioitaliapage/" element={<Index />} />
-            <Route exact path="/aluminioitaliapage/login" element={<Login />} />
-            <Route exact path="/aluminioitaliapage/admin/trabajos" element={<Abmtrabajos />} />
+            <Route exact path="/" element={<Index />} />
+            <Route exact path="/login" element={<Login />} />
+            <Route exact path="/admin/trabajos" element={<Abmtrabajos />} />
             <Route exact path="/aluminioitaliapage/admin/categorias" element={<Abmcategorias />} />
           </Routes>
         </LoginProvider>
