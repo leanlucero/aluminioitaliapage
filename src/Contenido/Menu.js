@@ -16,7 +16,7 @@ export default function Menu() {
 
         <Navbar.Brand ><a href="./" className="logo d-flex align-items-center">
               <img src="img/logo.jpg" alt="" />
-              <span>Aluminio Italia</span>
+              <span>Aluminio Italian</span>
             </a></Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
@@ -28,11 +28,11 @@ export default function Menu() {
                   <Nav.Link href="./#values">Services</Nav.Link>
                   <Nav.Link href="./#portfolio">Portfolio</Nav.Link>
                   <Nav.Link href="./#contact">Contacto</Nav.Link>
-                  <Nav.Link href="/#/login">Login</Nav.Link>
+                  <Nav.Link href="./#/login">Login</Nav.Link>
                 </>
                   : <>
-                    <Nav.Link href="/#/admin/trabajos">ABM trabajos</Nav.Link>
-                    <Nav.Link href="/#/admin/categorias">ABM Categorias</Nav.Link>
+                    <Nav.Link href="./#/admin/trabajos">ABM trabajos</Nav.Link>
+                    <Nav.Link href="./#/admin/categorias">ABM Categorias</Nav.Link>
                     <Nav.Link onClick={handleAuth}>Logout</Nav.Link>
                   </>
 
