@@ -28,11 +28,11 @@ export default function Menu() {
                   <Nav.Link href="./#values">Services</Nav.Link>
                   <Nav.Link href="./#portfolio">Portfolio</Nav.Link>
                   <Nav.Link href="./#contact">Contacto</Nav.Link>
-                  <Nav.Link href="login">Login</Nav.Link>
+                  <Nav.Link href="/#/login">Login</Nav.Link>
                 </>
                   : <>
-                    <Nav.Link href="/admin/trabajos">ABM trabajos</Nav.Link>
-                    <Nav.Link href="/admin/categorias">ABM Categorias</Nav.Link>
+                    <Nav.Link href="/#/admin/trabajos">ABM trabajos</Nav.Link>
+                    <Nav.Link href="/#/admin/categorias">ABM Categorias</Nav.Link>
                     <Nav.Link onClick={handleAuth}>Logout</Nav.Link>
                   </>
 
