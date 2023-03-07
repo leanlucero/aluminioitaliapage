@@ -12,11 +12,11 @@ export default function Login() {
 
   let history = useNavigate()
 
-  // useEffect(()=>{
-  //   if (user) {
-  //     history("./")
-  //   }
-  // },[])
+   useEffect(()=>{
+     if (user) {
+       history("./")
+     }
+   },[])
   const cambiarNombre = (event) =>{
     setUsername(event.target.value)
   }
@@ -30,7 +30,7 @@ export default function Login() {
     if (token) {
       console.log(token)
       handleAuth(token)
-      // history("./")
+      history("./")
     }
   }
 
