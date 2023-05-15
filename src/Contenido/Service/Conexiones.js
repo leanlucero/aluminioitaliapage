@@ -1,6 +1,6 @@
 import axios from 'axios'; 
 
-const URL = `http://localhost:8080`
+const URL = `https://apirestaluminioitalia.onrender.com`
 
  export const logearse = async (usuario , pass) =>{
   let aux
